@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Facemash</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <p>Facemash</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-ranking">
+            <canvas id="ranking"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="{{ url_for('routes.home') }}">Vote</a></li>
+                <li><a href="{{ url_for('routes.ranking') }}">Ranking</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>
