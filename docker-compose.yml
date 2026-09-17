@@ -1,0 +1,13 @@
+services:
+  facemash:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_DEBUG: "0"
+      SQLALCHEMY_DATABASE_URI: sqlite:///facemash.db
+    volumes:
+      - facemash_data:/app/instance
+
+volumes:
+  facemash_data:
